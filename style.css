@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    background-image: url("assets/background_image.jpg");
+    background-size: cover;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bk-box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/** navbar section **/
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 148px;
+}
+
+.nav-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-options {
+    display: flex;
+}
+
+.nav-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 125px;
+    border: 0.1px solid rgb(87, 79, 79);
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-select select {
+    font-size: 1rem;
+    margin-left: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.nav-signin {
+    width: 80px;
+    height: 32px;
+    background-color: #e50914;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: none;
+}
+
+.nav-signin a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-signin:hover {
+    background-color: #bb0811;
+}
+
+.hero-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.taglines {
+    width: 588px;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagline1 {
+    font-size: 3.3rem;
+    font-weight: 800;
+
+}
+
+.tagline2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+.tagline3 {
+    font-size: 1rem;
+    margin-top: 32px;
+}
+
+.login-section {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.email input {
+    width: 380px;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(27, 26, 26, 0.7);
+    padding-left: 20px;
+    color: #fff;
+    font-size: 1rem;
+    border: 1px solid grey;
+}
+
+.login-section button {
+    width: 200px;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e50914;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.email input:hover {
+    font-size: 0.85rem;
+}
+
+.login-section button:hover {
+    background-color: #bb0811;
+}
+
+.curve {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 100%;
+    height: 90px;
+
+    transform: translate(-50%, 50%);
+
+    border-top: 4px solid #e50914;
+    border-radius: 50% 50% 0 0;
+
+    background:
+        radial-gradient(50% 500% at 50% -420%,
+            rgba(64, 97, 231, 0.4) 80%,
+            rgba(0, 0, 0, 0.1) 100%),
+        black;
+}
+
+
+/** content section **/
+.content-section {
+    color: white;
+
+}
+
+.content-section h2 {
+    margin-left: 150px;
+    margin-top: 33px;
+}
+
+.movies-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.movie {
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie img {
+    height: 260px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+/** features **/
+
+
+.join {
+    margin-left: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 90px 0px 150px;
+    gap: 18px;
+    /* margin-left: 120px;     */
+}
+
+.feature-box {
+    height: 240px;
+    width: 290px;
+    border-radius: 10px;
+    background-color: rgb(47, 50, 95);
+
+}
+
+.feature-box h3 {
+    margin: 30px 40px 15px 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.feature-box p {
+    font-size: 0.98rem;
+    margin: 15px 25px 15px 20px;
+}
+
+/** questions section **/
+.q-head {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.text-button {
+    display: block;
+    height: 80px;
+    width: 80vw;
+    background-color: rgb(42, 41, 41);
+    color: white;
+    font-size: 1.6rem;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+.text-button:hover {
+    background-color: rgb(60, 56, 56);
+}
+
+/** footer section **/
+.foot-signin {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.foot-signin h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.foot-links {
+    margin-top: 60px;
+}
+
+.quest {
+    color: rgb(146, 144, 144);
+    width: 83%;
+    margin: 50px auto;
+    font-size: 1.1rem;
+}
+
+.foot-links a {
+    color: rgb(146, 144, 144);
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+.foot-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 6px 14px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 60px 0 0 0;
+    position: relative;
+    left: 120px;
+}
+
+.foot-btn img {
+    margin-right: 2px;
+}
+
+.foot-btn select {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.closing {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: rgb(146, 144, 144);
+    width: 85%;
+    margin: 50px auto;
+
+}
+
+
+@media (max-width: 1500px) {
+    .nav-section {
+        width: 100%;
+    }
+
+    .movies-section {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .movies-section {
+        justify-content: flex-start;
+    }
+
+    .content-section h2 {
+        padding-left: 100px;
+    }
+
+    .feature-box {
+        width: 500px;
+        height: 340px;
+    }
+
+    .feature-box h3 {
+        font-size: 2rem;
+    }
+
+    .feature-box p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1210px) {
+
+    .features {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .feature-box {
+        margin: 10px;
+    }
+
+    .foot-links p {
+        margin-left: 6rem;
+    }
+
+    .foot-container {
+        flex-wrap: wrap;
+    }
+
+    .foot-btn {
+        left: 0;
+        margin-left: 6rem;
+    }
+}
